@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyFriends</title>
     <header>
-
+        <link rel="stylesheet" href="./styles/styles.css"> 
     </header>
     <body>
         <h1>
@@ -17,9 +17,13 @@
         <h2>
             Can you help me describe your friend.
         </h2>
-        ชื่อเล่น <input type="text" name="nickName">
-        อายุ <input type="number" name="age">
-        <button id="buttonFriendDetail" onclick="sentFriendDetail()" > ส่งชื่อเพื่อน </button>
+        <label for="nickName">ชื่อเล่น:</label>
+        <input type="text" id="nickName" name="nickName">
+        
+        <label for="age">อายุ:</label>
+        <input type="number" id="age" name="age">
+        <button id="buttonFriendDetail" onclick="sentFriendDetail()">ส่งชื่อเพื่อน</button>
+    </div>
         <br>
         <div id ="yourfrienddetail">
 

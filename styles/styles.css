@@ -1,54 +1,77 @@
-/* styles.css */
-
-/* สไตล์ของส่วนหัว */
-header {
-    
-    padding: 20px;
-}
 body {
+    font-family: Arial, sans-serif; /* Set a nice font */
+    margin: 20px; /* Add some margin for spacing */
     text-align: center;
-}
-/* สไตล์ของรายการเพื่อน */
-#friendInputs label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#friendInputs input[type="text"],
-#friendInputs input[type="number"] {
-    width: 200px;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-/* สไตล์ของปุ่ม */
-
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* สไตล์ของหัวข้อ */
-h1, h2 {
-    color: #333;
-    text-align: center;
-}
-h1 {
-
-    margin-top: 50px; /* ให้มีระยะห่างด้านบน 50px */
-}
-h2 {
-    font-size: 18px;
-}
-#numberOfFriend {
-    text-align: center;
-    font-size: 24px; /* กำหนดขนาดตัวอักษรใหญ่ขึ้นเป็น 24px */
-}
-
-
-/* สไตล์ของบริเวณผลลัพธ์ */
-#functionResult {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-}
+    
+  }
+  
+  h1, h2 {
+    text-align: center; /* Center align headings */
+    margin-bottom: 10px; /* Add some space after headings */
+  }
+  h1 {
+    font-family: 'Dancing Script', cursive; /* Cursive font for headings */
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif; /* Readable font for content */
+  } 
+  button {
+    background-color: #4CAF50; /* Green color for buttons */
+    color: white; /* White text for buttons */
+    padding: 10px 20px; /* Add padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable behavior */
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+  }
+  input[type="text"], input[type="number"] {
+    padding: 5px 10px; /* Add padding for input fields */
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 3px; /* Add rounded corners to input fields */
+    background-color: #f0f0f0; /* Light gray background */
+    background: linear-gradient(to right, #f0f8ff, #e6e6e6);
+  }
+  #numberOfFriend {
+    font-size: 20px; /* Make friend count stand out */
+    font-weight: bold;
+  }
+  
+  #yourfrienddetail {
+    border: 1px solid #ddd; /* Add a border to friend details */
+    padding: 10px; /* Add padding for better readability */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #selectFunction button {
+    margin-right: 10px; /* Add spacing between function buttons */
+  }
+  
+  #functionResult {
+    font-style: italic; /* Emphasize function results */
+  }
+  #numberOfFriend, #yourfrienddetail {
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  @media (max-width: 768px) {
+    h1, h2 {
+      font-size: 1.2em; /* Reduce font size for smaller screens */
+    }
+    button {
+      padding: 5px 10px; /* Adjust button padding for smaller screens */
+    }
+  }
+  button#sentAllFriends::after {
+    content: "\f105"; /* Font Awesome icon for "list" */
+    font-family: FontAwesome; /* Replace with your icon library font family */
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    /* Adjust icon positioning as needed */
+  }

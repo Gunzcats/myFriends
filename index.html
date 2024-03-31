@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFriends</title>
+    <header>
+
+    </header>
+    <body>
+        <h1>
+            Hello, Here is how many friends you have.
+        </h1>
+        
+        <div id ="numberOfFriend">
+            <!-- จำนวนเพื่อน -->
+        </div>
+        <h2>
+            Can you help me describe your friend.
+        </h2>
+        ชื่อเล่น <input type="text" name="nickName">
+        อายุ <input type="number" name="age">
+        <button id="buttonFriendDetail" onclick="sentFriendDetail()" > ส่งชื่อเพื่อน </button>
+        <br>
+        <div id ="yourfrienddetail">
+
+        </div>
+        <button onclick="sentAllFriends(event)"> ส่งรายชื่อทั้งหมด </button>
+        <div id="selectFunction" style="visibility: hidden;">
+            <button onclick="totalAge()" >Total Age</button>
+            <button onclick="meanAge()">Mean Age</button>
+            <button onclick="minAge()">Min Age</button>
+            <button onclick="maxAge()">Max Age</button>
+        </div>
+        <div id="functionResult">
+
+        </div>
+        <button onclick="reloadPage()" onmouseover="somethingOnMe(event)">Reload Page</button>
+        <script src="./JavaScript/home.js"></script>
+    </body>
+</html>
